@@ -81,7 +81,7 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 
 /* Login Page */
 .login-about {
-  background-color: #9bdfb8;
+  background-color: #aee5c6;
   height: 50rem;
   margin-top: 20rem;
   display: flex;
@@ -110,7 +110,7 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
   margin: 0 auto;
 }
 .login-explore {
-  background-color: #aee5c6;
+  /*background-color: #9bdfb8;*/
   height: 50rem;
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 
 .login-footer {
   padding-top: 3rem;
-  background-color: #9bdfb8;
+  background-color: #74d49b;
 }
 
 .footer-git {
