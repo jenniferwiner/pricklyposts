@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import logoOne from '../../img/logo-1.png'
 import logoTwo from '../../img/logo-2.png'
+import CactusAbout from '../../img/Cactus_5.png'
 import Logo from '../../img/Cactus_6.png'
 import Github from '../../img/github.png'
 import Instagram from '../../img/instagram.png'
@@ -30,20 +31,18 @@ class Login extends Component {
           <LoginButton />
         </div>
         <div className="container-fluid login-about">
-          <div className="about-content">
-            <h2>ABOUT</h2>
-            <p>Prickly posts is a digital journaling platform based of the principles of the Bullet Journal. </p>
-            <div className="about-quote">
-              <p>
-                "A creative person has to create. It doesn't really matter what you create. If such a dancer wanted to go out and build the cactus gardens where he could, in Mexico, let him do that, but something that is creative has to go on."
-                <br/>
-                Katherine Dunham
-              </p>
+          <div className="about-container">
+            <div className="about-content row">
+
+              <h1>READY TO BEGIN?</h1>
+              <img className="about-cactus-img" src={CactusAbout} alt="cactus"/>
+              <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover <br /> the beauty of Bullet Journaling without the stress of design</h4>
             </div>
           </div>
         </div>
         <div className="container-fluid login-explore">
           <div className="container login-explore-content">
+            <h1>WRITE & RECORD</h1>
             <div className="row">
               <div className="col-md-4">
                 <span className="glyphicon glyphicon-list-alt explore-icons" aria-hidden="true"></span>
