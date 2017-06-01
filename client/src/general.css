@@ -7,11 +7,6 @@ body, html {
 #root {
   font-family: 'Raleway', sans-serif;
   background-color: transparent;
-  background-image: url(https://www.clipartsgram.com/image/844021927-notebook-paper-powerpoint-template429184.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 1000px;
 }
 
 
@@ -82,6 +77,74 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 
 .journalContainer {
   margin-top: -18rem;
+}
+
+/* Login Page */
+.login-about {
+  background-color: #9bdfb8;
+  height: 50rem;
+  margin-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 75%;
+  height: auto;
+
+}
+
+.about-content h3 {
+  font-size: 20px;
+}
+.about-content p {
+  font-size: 16px;
+}
+
+.about-quote {
+  width: 60%;
+  margin: 0 auto;
+}
+.login-explore {
+  background-color: #aee5c6;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-explore-content {
+  width: 75%;
+}
+
+.login-explore-text {
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.instagram-text {
+  font-size: 16px;
+  padding-top: 24px;
+}
+
+.explore-icons {
+  height: 75px;
+  font-size: 75px;
+}
+
+.login-footer {
+  padding-top: 3rem;
+  background-color: #9bdfb8;
+}
+
+.footer-git {
+  padding-bottom: 1rem;
+  height: 5rem;
 }
 
 /*-- NavBar & Sidebar --*/
@@ -274,7 +337,7 @@ div.navbar-header {
 }
 
 .App-content {
-  padding-top: 200px;
+  padding-top: 15rem;
 }
 
 .App-title {

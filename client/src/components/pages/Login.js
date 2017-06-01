@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import logoOne from '../../img/logo-1.png'
 import logoTwo from '../../img/logo-2.png'
 import Logo from '../../img/Cactus_6.png'
+import Github from '../../img/github.png'
+import Instagram from '../../img/instagram.png'
 import LoginButton from './../buttons/loginButton'
+
 
 class Login extends Component {
   constructor(props) {
@@ -25,6 +28,41 @@ class Login extends Component {
             <img className="logo-2" alt="svg of a cactus" src={logoTwo} />
           </h1>
           <LoginButton />
+        </div>
+        <div className="container-fluid login-about">
+          <div className="about-content">
+            <h2>ABOUT</h2>
+            <p>Prickly posts is a journaling platform that encourages users to creatively organize and explore </p>
+            <div className="about-quote">
+              <p>
+                "A creative person has to create. It doesn't really matter what you create. If such a dancer wanted to go out and build the cactus gardens where he could, in Mexico, let him do that, but something that is creative has to go on."
+                <br/>
+                Katherine Dunham
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid login-explore">
+          <div className="container login-explore-content">
+            <div className="row">
+              <div className="col-md-4">
+                <span className="glyphicon glyphicon-list-alt explore-icons" aria-hidden="true"></span>
+                <p className="login-explore-text">Record your thoughts and ideas <br /> in bullet size snippits</p>
+              </div>
+              <div className="col-md-4">
+                <span><img className="explore-icons" src={Instagram} alt="instagram-icon"/></span>
+                <p className="instagram-text">Integrate your recent Instagram <br />photos to customize entries</p>
+              </div>
+              <div className="col-md-4">
+                <span className="glyphicon glyphicon-grain explore-icons" aria-hidden="true"></span>
+                <p className="login-explore-text">Explore your personal growth by <br /> browsing through past journals</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="container-fluid login-footer">
+          <a className="footer-link" href="https://github.com/jenniferwiner/pricklyposts"><img className="footer-git" src={Github} alt="github-logo"/></a>
+          <p class="copyright">Prickly Posts &copy; 2017 All Rights Reserved.</p>
         </div>
       </div>
     )
