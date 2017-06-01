@@ -32,7 +32,7 @@ class Login extends Component {
         <div className="container-fluid login-about">
           <div className="about-content">
             <h2>ABOUT</h2>
-            <p>Prickly posts is a journaling platform that encourages users to creatively organize and explore </p>
+            <p>Prickly posts is a digital journaling platform based of the principles of the Bullet Journal. </p>
             <div className="about-quote">
               <p>
                 "A creative person has to create. It doesn't really matter what you create. If such a dancer wanted to go out and build the cactus gardens where he could, in Mexico, let him do that, but something that is creative has to go on."
@@ -50,7 +50,7 @@ class Login extends Component {
                 <p className="login-explore-text">Record your thoughts and ideas <br /> in bullet size snippits</p>
               </div>
               <div className="col-md-4">
-                <span><img className="explore-icons" src={Instagram} alt="instagram-icon"/></span>
+                <span><img className="instagram-icon" src={Instagram} alt="instagram-icon"/></span>
                 <p className="instagram-text">Integrate your recent Instagram <br />photos to customize entries</p>
               </div>
               <div className="col-md-4">
@@ -62,7 +62,7 @@ class Login extends Component {
         </div>
         <div className="container-fluid login-footer">
           <a className="footer-link" href="https://github.com/jenniferwiner/pricklyposts"><img className="footer-git" src={Github} alt="github-logo"/></a>
-          <p class="copyright">Prickly Posts &copy; 2017 All Rights Reserved.</p>
+          <p className="copyright">Prickly Posts &copy; 2017 All Rights Reserved.</p>
         </div>
       </div>
     )

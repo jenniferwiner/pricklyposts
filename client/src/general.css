@@ -80,10 +80,20 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 }
 
 /* Login Page */
+
+.App-content {
+  background-color: rgba(244, 230, 218, 0.4);
+  width: 100%;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .login-about {
   background-color: #aee5c6;
   height: 50rem;
-  margin-top: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,7 +105,6 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
   background-color: rgba(255, 255, 255, 0.2);
   width: 75%;
   height: auto;
-
 }
 
 .about-content h3 {
@@ -110,7 +119,7 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
   margin: 0 auto;
 }
 .login-explore {
-  /*background-color: #9bdfb8;*/
+  background-color: rgba(244, 230, 218, 0.56);
   height: 50rem;
   display: flex;
   flex-direction: column;
@@ -133,13 +142,17 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 }
 
 .explore-icons {
-  height: 75px;
   font-size: 75px;
+}
+
+.instagram-icon {
+  height: 75px;
+  opacity: 0.8;
 }
 
 .login-footer {
   padding-top: 3rem;
-  background-color: #74d49b;
+  background-color: #aee5c6;
 }
 
 .footer-git {
