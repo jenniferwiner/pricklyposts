@@ -29,11 +29,15 @@ class Login extends Component {
             <img className="logo-2" alt="svg of a cactus" src={logoTwo} />
           </h1>
           <LoginButton />
+          <div className="read-more-div">
+            <h4>READ ABOUT US</h4>
+            <span className="glyphicon glyphicon-menu-down login-down-arrow" aria-hidden="true"></span>
+          </div>
         </div>
         <div className="container-fluid login-about">
           <div className="about-container">
-            <div className="about-content row">
 
+            <div className="about-content row">
               <h1>READY TO BEGIN?</h1>
               <img className="about-cactus-img" src={CactusAbout} alt="cactus"/>
               <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover <br /> the beauty of Bullet Journaling without a degree in Caligraphy.</h4>
