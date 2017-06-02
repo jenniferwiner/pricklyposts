@@ -7,6 +7,12 @@ import Github from '../../img/github.png'
 import Instagram from '../../img/instagram.png'
 import LoginButton from './../buttons/loginButton'
 
+import Scroll from 'react-scroll'
+
+const Link = Scroll.Link
+const Events = Scroll.Events
+const scrollSpy = Scroll.scrollSpy
+
 
 class Login extends Component {
   constructor(props) {
@@ -19,6 +25,15 @@ class Login extends Component {
     }
   }
 
+  componentDidMount() {
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
+
   render() {
     return (
       <div className="App">
@@ -29,34 +44,39 @@ class Login extends Component {
             <img className="logo-2" alt="svg of a cactus" src={logoTwo} />
           </h1>
           <LoginButton />
-          <div className="read-more-div">
-            <h4>READ ABOUT US</h4>
-            <span className="glyphicon glyphicon-menu-down login-down-arrow" aria-hidden="true"></span>
-          </div>
         </div>
-        <div className="container-fluid login-about">
+        <div className="read-more-about container-fluid">
+          <Link activeClass="active" to="login-about" spy={true} smooth={true} offset={50} duration={1000} onSetActive={this.handleSetActive}>
+            <span className="glyphicon glyphicon-menu-down login-arrow-about" aria-hidden="true"></span>
+          </Link>
+        </div>
+        <div className="container-fluid login-about" id="login-about">
           <div className="about-container">
-
             <div className="about-content row">
               <h1>READY TO BEGIN?</h1>
               <img className="about-cactus-img" src={CactusAbout} alt="cactus"/>
-              <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover <br /> the beauty of Bullet Journaling without a degree in Caligraphy.</h4>
+              <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover the beauty of Bullet Journaling without a degree in Caligraphy.</h4>
             </div>
           </div>
         </div>
-        <div className="container-fluid login-explore">
+        <div className="container-fluid read-more-explore">
+          <Link activeClass="active" to="login-explore" spy={true} smooth={true} offset={50} duration={1000} onSetActive={this.handleSetActive}>
+            <span className="glyphicon glyphicon-menu-down login-arrow-explore" aria-hidden="true"></span>
+          </Link>
+        </div>
+        <div className="container-fluid login-explore" id="login-explore">
           <div className="container login-explore-content">
             <h1>WRITE & RECORD</h1>
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-sm-12 col-md-4">
                 <span className="glyphicon glyphicon-list-alt explore-icons" aria-hidden="true"></span>
                 <p className="login-explore-text">Record your thoughts and ideas <br /> in bullet size snippits</p>
               </div>
-              <div className="col-md-4">
+              <div className="col-sm-12 col-md-4">
                 <span><img className="instagram-icon" src={Instagram} alt="instagram-icon"/></span>
                 <p className="instagram-text">Integrate your recent Instagram <br />photos to customize entries</p>
               </div>
-              <div className="col-md-4">
+              <div className="col-sm-12 col-md-4">
                 <span className="glyphicon glyphicon-grain explore-icons" aria-hidden="true"></span>
                 <p className="login-explore-text">Explore your personal growth by <br /> browsing through past journals</p>
               </div>

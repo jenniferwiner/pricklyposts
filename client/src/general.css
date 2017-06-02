@@ -84,21 +84,43 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 .App-content {
   background-color: rgba(244, 230, 218, 0.2);
   width: 100%;
-  height: 65rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.read-more-div{
-  margin-left: 4.5rem;
-  margin-top: 10rem;
+.read-more-about {
+  background-color: rgba(244, 230, 218, 0.2);
+  height: 3.2rem;
 }
 
-.login-down-arrow {
+.read-more-explore {
+  background-color: #87d9ab;
+  height: 2.5rem;
+}
+
+.login-arrow-about, .login-arrow-explore {
   font-size: 3em;
-  /*margin-top: -10rem;*/
+  padding: 5px;
+  border-radius: 50%;
+  margin-left: 3rem;
+}
+
+.login-arrow-about {
+  background-color: #FDFAF8;
+  border: .5px solid #FDFAF8;
+}
+
+.login-arrow-explore {
+  margin-top: -30px;
+  background-color: #aee5c6;
+  border: .5px solid #aee5c6;
+}
+
+.login-arrow-about:before, .login-arrow-explore:before {
+  color: black;
 }
 
 .login-about {
@@ -152,6 +174,7 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 .login-explore-content h1 {
   padding-bottom: 70px;
 }
+
 .login-explore-content {
   width: 75%;
 }
@@ -159,11 +182,13 @@ button:hover, button:active, button:visited, button:focus, .btn-default:hover, .
 .login-explore-text {
   padding-top: 20px;
   font-size: 16px;
+  padding-bottom: 20px;
 }
 
 .instagram-text {
   font-size: 16px;
   padding-top: 24px;
+  padding-bottom: 20px;
 }
 
 .explore-icons {
@@ -430,8 +455,51 @@ div.navbar-header {
 
 
 /*-- Media Queries --*/
+@media only screen and (min-device-width: 320px) and (max-device-height: 667px) {
+  .App-content {
+    height: auto;
+  }
+
+  .App-title {
+    margin: 0px;
+  }
+  img.logo-1 {
+    width: 182px;
+  }
+
+  img.logo-2 {
+    width: 150px;
+  }
+
+  .App-content button {
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+  .login-arrow-about, .login-arrow-explore {
+    margin-left: 0px;
+  }
+  .login-explore {
+    height: auto;
+  }
+  .about-container {
+    width: 100%;
+    margin: 35px 0px 35px 0px;
+  }
+  .about-content {
+    width: 100%;
+  }
+  .login-explore-content h1 {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .login-about {
+    height: auto;
+  }
+}
+
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+
   .Home-title {
     font-size: 3rem;
   }
