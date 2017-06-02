@@ -36,7 +36,7 @@ class Login extends Component {
 
               <h1>READY TO BEGIN?</h1>
               <img className="about-cactus-img" src={CactusAbout} alt="cactus"/>
-              <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover <br /> the beauty of Bullet Journaling without the stress of design</h4>
+              <h4 className="about-tagline">Prickly Posts is a journaling platform that allows you to creatively explore and discover <br /> the beauty of Bullet Journaling without a degree in Caligraphy.</h4>
             </div>
           </div>
         </div>
