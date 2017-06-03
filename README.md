@@ -2,7 +2,7 @@
 ### A digital journaling platform that makes creativity and organization accessible for everyone
 ##
 
-A video walk through of our app: [https://youtu.be/tAZWRfJtx2o](https://youtu.be/tAZWRfJtx2o)
+A video walk through of our app: [https://youtu.be/kEUcZbigSYs](https://youtu.be/kEUcZbigSYs)
 
 Our current deployed version: [pricklyposts.herokuapp.com](pricklyposts.herokuapp.com)
 
