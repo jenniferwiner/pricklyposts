@@ -459,18 +459,15 @@ div.navbar-header {
   .App-content {
     height: auto;
   }
-
   .App-title {
     margin: 0px;
   }
   img.logo-1 {
     width: 182px;
   }
-
   img.logo-2 {
     width: 150px;
   }
-
   .App-content button {
     margin-left: 0px;
     margin-bottom: 5px;
