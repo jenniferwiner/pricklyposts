@@ -1,16 +1,18 @@
 # Prickly Posts
-### A digital journaling platform that makes creativity and organization accessible for everyone
+**Prickly Posts is a journaling platform that allows users to creatively explore and discover the beauty of Bullet Journaling without a degree in Caligraphy.**
+
+Created and developed by Jennifer Winer, Grace Li, Emily Ringoen, and Kaiti Johnson
 ##
 
-A video walk through of our app: [link here]()
+A video walk through of our app: [https://youtu.be/kEUcZbigSYs](https://youtu.be/kEUcZbigSYs)
 
-Our current deployed version: [pricklyposts.herokuapp.com](pricklyposts.herokuapp.com)
+Our current deployed version: [prickly-posts.herokuapp.com](prickly-posts.herokuapp.com)
 
 
 * If you want to log onto Prickly Posts with Instagram, please contact us to become a sandbox user.
 * Otherwise, feel free to fork and clone the repo and run on your machine's local host.
 ```
-To run:
+To run (server and proxy server locally):
 $ PORT=3001 node server/bin/www
 $ cd client
 $ npm start
